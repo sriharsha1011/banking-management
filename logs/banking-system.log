@@ -1,0 +1,27 @@
+2025-11-03 09:26:54 [main] INFO  com.banking.config.DatabaseConfig - Database properties loaded successfully
+2025-11-03 09:26:54 [main] INFO  com.banking.BankingApplication - Banking Management System started
+2025-11-03 10:10:20 [main] INFO  com.banking.config.DatabaseConfig - Database properties loaded successfully
+2025-11-03 10:10:20 [main] INFO  com.banking.BankingApplication - Banking Management System started
+2025-11-03 10:11:43 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-03 10:11:43 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-03 10:11:43 [main] INFO  com.banking.dao.TransactionDAO - Transaction created: ID 4
+2025-11-03 10:11:43 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-03 10:11:44 [main] INFO  com.banking.dao.AccountDAO - Balance updated for account ID: 3, New balance: 8500.00
+2025-11-03 10:11:44 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-03 10:11:44 [main] INFO  com.banking.dao.TransactionDAO - Transaction status updated: ID 4 to SUCCESS
+2025-11-03 10:11:44 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-03 10:11:44 [main] DEBUG c.b.service.TransactionLogService - Transaction log created for transaction ID: 4
+2025-11-03 10:11:44 [main] INFO  com.banking.service.AccountService - Withdrawal completed: 1000 from account ACC1003
+2025-11-03 10:12:58 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-03 10:12:58 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-03 10:12:58 [main] INFO  com.banking.dao.TransactionDAO - Transaction created: ID 5
+2025-11-03 10:12:58 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-03 10:12:58 [main] INFO  com.banking.dao.AccountDAO - Balance updated for account ID: 3, New balance: 18500.00
+2025-11-03 10:12:58 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-03 10:12:58 [main] INFO  com.banking.dao.TransactionDAO - Transaction status updated: ID 5 to SUCCESS
+2025-11-03 10:12:58 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-03 10:12:58 [main] DEBUG c.b.service.TransactionLogService - Transaction log created for transaction ID: 5
+2025-11-03 10:12:58 [main] INFO  com.banking.service.AccountService - Deposit completed: 10000 to account ACC1003
+2025-11-03 10:13:28 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-03 10:13:28 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-03 10:14:11 [main] INFO  com.banking.config.DatabaseConfig - Database properties loaded successfully

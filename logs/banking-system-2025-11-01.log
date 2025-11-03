@@ -1,0 +1,76 @@
+2025-11-01 20:57:01 [main] INFO  com.banking.config.DatabaseConfig - Database properties loaded successfully
+2025-11-01 20:57:01 [main] INFO  com.banking.BankingApplication - Banking Management System started
+2025-11-01 20:58:37 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 20:58:37 [main] ERROR com.banking.dao.AccountDAO - Error creating account: ACC1001
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ACC1001' for key 'account.account_number'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.banking.dao.AccountDAO.create(AccountDAO.java:34)
+	at com.banking.service.AccountService.createAccount(AccountService.java:28)
+	at com.banking.BankingApplication.createAccount(BankingApplication.java:93)
+	at com.banking.BankingApplication.main(BankingApplication.java:27)
+2025-11-01 20:58:37 [main] ERROR com.banking.service.AccountService - Failed to create account
+java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ACC1001' for key 'account.account_number'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.banking.dao.AccountDAO.create(AccountDAO.java:34)
+	at com.banking.service.AccountService.createAccount(AccountService.java:28)
+	at com.banking.BankingApplication.createAccount(BankingApplication.java:93)
+	at com.banking.BankingApplication.main(BankingApplication.java:27)
+2025-11-01 20:58:37 [main] ERROR com.banking.BankingApplication - Operation failed
+com.banking.exception.BankingException: Failed to create account
+	at com.banking.service.AccountService.createAccount(AccountService.java:33)
+	at com.banking.BankingApplication.createAccount(BankingApplication.java:93)
+	at com.banking.BankingApplication.main(BankingApplication.java:27)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'ACC1001' for key 'account.account_number'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.banking.dao.AccountDAO.create(AccountDAO.java:34)
+	at com.banking.service.AccountService.createAccount(AccountService.java:28)
+	... 2 common frames omitted
+2025-11-01 21:00:04 [main] INFO  com.banking.config.DatabaseConfig - Database properties loaded successfully
+2025-11-01 21:00:04 [main] INFO  com.banking.BankingApplication - Banking Management System started
+2025-11-01 21:00:38 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 21:03:58 [main] INFO  com.banking.config.DatabaseConfig - Database properties loaded successfully
+2025-11-01 21:03:59 [main] INFO  com.banking.BankingApplication - Banking Management System started
+2025-11-01 21:05:04 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 21:05:04 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 21:05:04 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 21:05:04 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 21:05:04 [main] INFO  com.banking.dao.TransactionDAO - Transaction created: ID 1
+2025-11-01 21:05:04 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 21:05:04 [main] INFO  com.banking.dao.AccountDAO - Balance updated for account ID: 3, New balance: 9500.00
+2025-11-01 21:05:04 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 21:05:04 [main] INFO  com.banking.dao.TransactionDAO - Transaction status updated: ID 1 to SUCCESS
+2025-11-01 21:05:05 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 21:05:05 [main] DEBUG c.b.service.TransactionLogService - Transaction log created for transaction ID: 1
+2025-11-01 21:05:05 [main] INFO  com.banking.service.AccountService - Withdrawal completed: 500 from account ACC1003
+2025-11-01 21:05:05 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 21:05:05 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 21:05:05 [main] INFO  com.banking.dao.TransactionDAO - Transaction created: ID 2
+2025-11-01 21:05:05 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 21:05:05 [main] INFO  com.banking.dao.AccountDAO - Balance updated for account ID: 2, New balance: 2500.00
+2025-11-01 21:05:05 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 21:05:05 [main] INFO  com.banking.dao.TransactionDAO - Transaction status updated: ID 2 to SUCCESS
+2025-11-01 21:05:05 [main] DEBUG com.banking.config.DatabaseConfig - Database connection established
+2025-11-01 21:05:05 [main] DEBUG c.b.service.TransactionLogService - Transaction log created for transaction ID: 2
+2025-11-01 21:05:05 [main] INFO  com.banking.service.AccountService - Deposit completed: 500 to account ACC1002
+2025-11-01 21:05:05 [main] INFO  com.banking.service.AccountService - Transfer completed: 500 from ACC1003 to ACC1002
+2025-11-01 21:09:59 [main] INFO  com.banking.config.DatabaseConfig - Database properties loaded successfully
+2025-11-01 21:09:59 [main] INFO  com.banking.BankingApplication - Banking Management System started
+2025-11-01 21:12:59 [main] INFO  com.banking.config.DatabaseConfig - Database properties loaded successfully
